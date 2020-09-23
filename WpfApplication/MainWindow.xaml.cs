@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApplication.Models;
 
 namespace WpfApplication
 {
@@ -23,6 +24,17 @@ namespace WpfApplication
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+
+        private void btnmessageViewButton_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new MessageViewModel();
+        }
+
+        private void btncontactViewButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
