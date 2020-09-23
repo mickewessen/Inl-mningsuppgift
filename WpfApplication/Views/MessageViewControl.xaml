@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApplication.Views"
+             xmlns:control="clr-namespace:WpfApplication.Control"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -14,6 +15,12 @@
 
         <StackPanel Grid.Column="0">
             <Button x:Name="messageButton" Content="Message 1" Click="messageButton_Click"/>
+            <control:MessageControl ContactName="Michael Wessén" ContactRole=".Net Developer"/>
+            <control:MessageControl ContactName="Samuel Wessén" ContactRole="Admin"/>
+            <control:MessageControl ContactName="Sofie Lesnik" ContactRole="Sale"/>
+            <control:MessageControl ContactName="Daniel Wessén" ContactRole="Human Resources"/>
+            <control:MessageControl ContactName="Hans-Mattin Lassie" ContactRole="Teacher"/>
+
         </StackPanel>
 
         <Grid Grid.Column="1" Margin="20">

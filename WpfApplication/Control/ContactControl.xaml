@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="WpfApplication.Control.ContactControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApplication.Control"
+             mc:Ignorable="d" 
+             d:DesignHeight="65" d:DesignWidth="300">
+    <Button x:Name="contactButton"  Background="Transparent" Click="contactButton_Click">
+        <Grid Width="291">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="65"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="contactImage" Grid.Column="0" Height="60" Width="60" HorizontalAlignment="Left"/>
+
+            <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                <TextBlock x:Name="fromcontactName"  Text ="" FontWeight="Bold"/>
+                <TextBlock x:Name="contactRole" Text="" FontSize="8" Foreground="Gray" FontStyle="Italic"/>
+                <TextBlock x:Name="emailAdress" Text="" FontSize="8" FontStyle="Italic" Margin="0,0,0,0"/>
+                <TextBlock x:Name="postalAdress" Text="" FontSize="8" FontStyle="Italic" Margin="0,0,0,0"/>
+                <TextBlock x:Name="phoneNumber" Text="" FontSize="8" FontStyle="Italic" Margin="0,0,0,0"/>
+
+            </StackPanel>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+            </Grid>
+
+        </Grid>
+
+    </Button>
+</UserControl>

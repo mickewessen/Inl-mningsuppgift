@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfApplication.Models;
+using WpfApplication.Control;
+using WpfApplication.Views;
 
 namespace WpfApplication
 {
@@ -34,7 +36,7 @@ namespace WpfApplication
 
         private void btncontactViewButton_Click(object sender, RoutedEventArgs e)
         {
-
+            DataContext = new ContactViewModel();
         }
     }
 }
